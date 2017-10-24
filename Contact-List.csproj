@@ -104,6 +104,10 @@
     <Compile Include="ContactsTableViewController.designer.cs">
       <DependentUpon>ContactsTableViewController.cs</DependentUpon>
     </Compile>
+    <Compile Include="ContactTableViewCell.cs" />
+    <Compile Include="ContactTableViewCell.designer.cs">
+      <DependentUpon>ContactTableViewCell.cs</DependentUpon>
+    </Compile>
   </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath)\Xamarin\iOS\Xamarin.iOS.CSharp.targets" />
 </Project>
