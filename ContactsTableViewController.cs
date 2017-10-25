@@ -18,14 +18,14 @@ namespace ContactList
             // Currently only has placeholder info
             contactList.Add(new Contact() {
                 Name = "Peter Pan",
-                Number = 123 456 7890,
+                Number = 1234567890,
                 Location = "Neverland"
             });
 
 			contactList.Add(new Contact()
 			{
 				Name = "Tinker Bell",
-				Number = 321 654 0987,
+				Number = 1234567890,
 				Location = "Pixie Hollow"
 			});
         }
@@ -42,20 +42,21 @@ namespace ContactList
 
         public override UITableViewCell GetCell(UITableView tableView, NSIndexPath indexPath)
         {
-            var cell = tableView.DequeueReusableCell("Book");
+          
+             var cell = tableView.DequeueReusableCell("Contact") as ContactTableViewCell;
 
-            var data = bookList[indexPath.Row];
+             var data = contactList[indexPath.Row];
 
-            cell.TextLabel.Text = data.Name;
+             cell.ContactData = data;
 
-            return cell;
+             return cell;
         }
 
     }
 
     public class Contact
     {
-        public string Image; // Don't worry about this for now
+        //public string Image;
         public string Name;
         public int Number;
         public string Location;
