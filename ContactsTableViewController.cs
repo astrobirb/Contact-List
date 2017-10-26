@@ -20,26 +20,32 @@ namespace ContactList
             {
                 Name = "Peter Pan",
                 Number = 1234567890,
+                Location = "Neverland",
+                ImagePath = "Images/peterpan.jpg"
             });
 
 			contactList.Add(new Contact()
 			{
                 Name = "Tinker Bell",
 				Number = 1234567890,
+                Location = "Pixie Hollow",
+                ImagePath = "Images/tinkerbell.jpeg"
 			});
 
             contactList.Add(new Contact()
 		    {
 			    Name = "Captain Hook",
                 Number = 1234567890,
-
+                Location = "Neverland",
+                ImagePath = "Images/hook.jpg"
 			});
 
             contactList.Add(new Contact()
 		    {
 			    Name = "Wendy Darling",
                 Number = 1234567890,
-
+                Location = "London",
+                ImagePath = "Images/wendy.png"
 			});
         }
 
@@ -64,13 +70,28 @@ namespace ContactList
             return cell;
         }
 
+        public override void PrepareForSegue(UIStoryboardSegue segue, NSObject sender)
+        {
+            if (segue.Identifier == "DetailsSegue")
+            {
+                var navigationController = segue.DestinationViewController as DetailsViewController;
+
+                if (navigationController != null)
+                {
+                    var rowPath = TableView.IndexPathForSelectedRow;
+                    var selectedData = contactList[rowPath.Row];
+                    navigationController.selectedContact = selectedData;
+                }
+            }
+        }
+
     }
 
     public class Contact
     {
         public string ImagePath;
         public string Name;
-        public int Number;
+        public long Number;
         public string Location;
     }
 }

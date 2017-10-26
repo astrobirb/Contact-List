@@ -72,7 +72,7 @@
         </scene>
         <scene sceneID="1561">
             <objects>
-                <viewController id="1562" sceneMemberID="viewController">
+                <viewController id="1562" sceneMemberID="viewController" customClass="DetailsViewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="1559"/>
                         <viewControllerLayoutGuide type="bottom" id="1560"/>
