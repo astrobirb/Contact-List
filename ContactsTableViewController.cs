@@ -16,17 +16,30 @@ namespace ContactList
             contactList = new List<Contact>();
 
             // Currently only has placeholder info
-            contactList.Add(new Contact() {
+            contactList.Add(new Contact()
+            {
                 Name = "Peter Pan",
                 Number = 1234567890,
-                Location = "Neverland"
             });
 
 			contactList.Add(new Contact()
 			{
-				Name = "Tinker Bell",
+                Name = "Tinker Bell",
 				Number = 1234567890,
-				Location = "Pixie Hollow"
+			});
+
+            contactList.Add(new Contact()
+		    {
+			    Name = "Captain Hook",
+                Number = 1234567890,
+
+			});
+
+            contactList.Add(new Contact()
+		    {
+			    Name = "Wendy Darling",
+                Number = 1234567890,
+
 			});
         }
 
@@ -42,21 +55,20 @@ namespace ContactList
 
         public override UITableViewCell GetCell(UITableView tableView, NSIndexPath indexPath)
         {
-          
-             var cell = tableView.DequeueReusableCell("Contact") as ContactTableViewCell;
+            var cell = tableView.DequeueReusableCell("Contact") as ContactTableViewCell;
 
-             var data = contactList[indexPath.Row];
+            var data = contactList[indexPath.Row];
 
-             cell.ContactData = data;
+            cell.ContactData = data;
 
-             return cell;
+            return cell;
         }
 
     }
 
     public class Contact
     {
-        //public string Image;
+        public string Image;
         public string Name;
         public int Number;
         public string Location;

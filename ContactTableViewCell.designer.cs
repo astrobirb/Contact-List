@@ -16,10 +16,6 @@ namespace ContactList
     {
         [Outlet]
         [GeneratedCode ("iOS Designer", "1.0")]
-        UIKit.UILabel labelLocation { get; set; }
-
-        [Outlet]
-        [GeneratedCode ("iOS Designer", "1.0")]
         UIKit.UILabel labelName { get; set; }
 
         [Outlet]
@@ -28,11 +24,6 @@ namespace ContactList
 
         void ReleaseDesignerOutlets ()
         {
-            if (labelLocation != null) {
-                labelLocation.Dispose ();
-                labelLocation = null;
-            }
-
             if (labelName != null) {
                 labelName.Dispose ();
                 labelName = null;

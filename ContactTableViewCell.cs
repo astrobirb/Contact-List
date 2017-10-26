@@ -15,7 +15,6 @@ namespace ContactList
                 contactData = value;
 
                 labelName.Text = contactData.Name;
-                labelLocation.Text = contactData.Location;
                 labelNumber.Text = contactData.Number.ToString();
 
             }
