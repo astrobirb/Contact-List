@@ -88,6 +88,7 @@
   </ItemGroup>
   <ItemGroup>
     <Folder Include="Resources\" />
+    <Folder Include="Images\" />
   </ItemGroup>
   <ItemGroup>
     <InterfaceDefinition Include="LaunchScreen.storyboard" />
@@ -108,6 +109,12 @@
     <Compile Include="ContactTableViewCell.designer.cs">
       <DependentUpon>ContactTableViewCell.cs</DependentUpon>
     </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Images\hook.jpg" />
+    <BundleResource Include="Images\wendy.jpg" />
+    <BundleResource Include="Images\tinkerbell.jpeg" />
+    <BundleResource Include="Images\peterpan.jpg" />
   </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath)\Xamarin\iOS\Xamarin.iOS.CSharp.targets" />
 </Project>

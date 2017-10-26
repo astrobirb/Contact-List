@@ -68,7 +68,7 @@ namespace ContactList
 
     public class Contact
     {
-        public string Image;
+        public string ImagePath;
         public string Name;
         public int Number;
         public string Location;

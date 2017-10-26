@@ -132,4 +132,10 @@
     <simulatedMetricsContainer key="defaultSimulatedMetrics">
         <simulatedScreenMetrics key="destination" type="retina55"/>
     </simulatedMetricsContainer>
+    <resources>
+        <image name="Images/hook.jpg" width="900" height="900"/>
+        <image name="Images/wendy.jpg" width="180" height="180"/>
+        <image name="Images/tinkerbell.jpeg" width="600" height="600"/>
+        <image name="Images/peterpan.jpg" width="600" height="600"/>
+    </resources>
 </document>
