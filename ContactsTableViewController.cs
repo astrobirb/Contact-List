@@ -45,7 +45,7 @@ namespace ContactList
 			    Name = "Wendy Darling",
                 Number = 1234567890,
                 Location = "London",
-                ImagePath = "Images/wendy.png"
+                ImagePath = "Images/wendy.jpg"
 			});
         }
 

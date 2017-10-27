@@ -14,6 +14,7 @@ namespace ContactList
 			set {
                 contactData = value;
 
+                contactImage.Image = UIImage.FromFile(contactData.ImagePath); ;
                 labelName.Text = contactData.Name;
                 labelNumber.Text = contactData.Number.ToString();
 
