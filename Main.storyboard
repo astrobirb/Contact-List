@@ -123,6 +123,12 @@
                             </label>
                         </subviews>
                     </view>
+                    <connections>
+                        <outlet property="labelContactName" destination="1667" id="name-outlet-1667"/>
+                        <outlet property="imgContactImage" destination="1666" id="name-outlet-1666"/>
+                        <outlet property="labelContactNumber" destination="1676" id="name-outlet-1676"/>
+                        <outlet property="labelContactLocation" destination="1677" id="name-outlet-1677"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="1564" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
