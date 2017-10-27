@@ -115,10 +115,10 @@
     </Compile>
   </ItemGroup>
   <ItemGroup>
-    <BundleResource Include="Images\hook.jpg" />
-    <BundleResource Include="Images\wendy.jpg" />
-    <BundleResource Include="Images\tinkerbell.jpeg" />
-    <BundleResource Include="Images\peterpan.jpg" />
+    <BundleResource Include="Images\mikha.jpg" />
+    <BundleResource Include="Images\home phone.jpg" />
+    <BundleResource Include="Images\dad.jpg" />
+    <BundleResource Include="Images\mom.jpg" />
   </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath)\Xamarin\iOS\Xamarin.iOS.CSharp.targets" />
 </Project>

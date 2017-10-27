@@ -10,42 +10,40 @@ namespace ContactList
 
         List<Contact> contactList;
 
-        // Note to self: Remember to list AT LEAST 4 individuals
         public ContactsTableViewController (IntPtr handle) : base (handle)
         {
             contactList = new List<Contact>();
 
-            // Currently only has placeholder info
             contactList.Add(new Contact()
             {
-                Name = "Peter Pan",
-                Number = 1234567890,
-                Location = "Neverland",
-                ImagePath = "Images/peterpan.jpg"
+                Name = "Mom",
+                Number = 4033992588,
+                Location = "Calgary, AB, Canada",
+                ImagePath = "Images/mom.jpg"
             });
 
 			contactList.Add(new Contact()
 			{
-                Name = "Tinker Bell",
-				Number = 1234567890,
-                Location = "Pixie Hollow",
-                ImagePath = "Images/tinkerbell.jpeg"
+                Name = "Dad",
+				Number = 4038053508,
+                Location = "Calgary, AB, Canada",
+                ImagePath = "Images/dad.jpg"
 			});
 
             contactList.Add(new Contact()
 		    {
-			    Name = "Captain Hook",
-                Number = 1234567890,
-                Location = "Neverland",
-                ImagePath = "Images/hook.jpg"
+			    Name = "Home phone",
+                Number = 5873196599,
+                Location = "Calgary, AB, Canada",
+                ImagePath = "Images/home phone.jpg"
 			});
 
             contactList.Add(new Contact()
 		    {
-			    Name = "Wendy Darling",
-                Number = 1234567890,
-                Location = "London",
-                ImagePath = "Images/wendy.jpg"
+			    Name = "Mikha",
+                Number = 4037961567,
+                Location = "Calgary, AB, Canada",
+                ImagePath = "Images/mikha.jpg"
 			});
         }
 
