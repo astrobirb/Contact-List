@@ -19,6 +19,7 @@ namespace ContactList
             labelContactName.Text = selectedContact.Name;
             labelContactNumber.Text = selectedContact.Number.ToString();
             labelContactLocation.Text = selectedContact.Location;
+            //responsible for the info shown on the second page
         }
     }
 }

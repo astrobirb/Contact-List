@@ -13,8 +13,7 @@ namespace ContactList
             get { return contactData; }
 			set {
                 contactData = value;
-
-                contactImage.Image = UIImage.FromFile(contactData.ImagePath); ;
+                //responsible for the info shown on the first page
                 labelName.Text = contactData.Name;
                 labelNumber.Text = contactData.Number.ToString();
 
@@ -23,7 +22,6 @@ namespace ContactList
 
         public ContactTableViewCell (IntPtr handle) : base (handle)
         {
-            
         }
     }
 }

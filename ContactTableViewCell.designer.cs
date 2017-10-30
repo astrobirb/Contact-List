@@ -16,10 +16,6 @@ namespace ContactList
     {
         [Outlet]
         [GeneratedCode ("iOS Designer", "1.0")]
-        UIKit.UIImageView contactImage { get; set; }
-
-        [Outlet]
-        [GeneratedCode ("iOS Designer", "1.0")]
         UIKit.UILabel labelName { get; set; }
 
         [Outlet]
@@ -28,11 +24,6 @@ namespace ContactList
 
         void ReleaseDesignerOutlets ()
         {
-            if (contactImage != null) {
-                contactImage.Dispose ();
-                contactImage = null;
-            }
-
             if (labelName != null) {
                 labelName.Dispose ();
                 labelName = null;

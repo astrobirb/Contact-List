@@ -22,30 +22,25 @@
                                     <autoresizingMask key="autoresizingMask"/>
                                     <subviews>
                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Name" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="406" translatesAutoresizingMaskIntoConstraints="NO" fixedFrame="YES">
-                                            <rect key="frame" x="112" y="0.0" width="157" height="21"/>
+                                            <rect key="frame" x="31" y="0.0" width="157" height="21"/>
                                             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                             <fontDescription key="fontDescription" type="system" pointSize="17" weight="heavy"/>
                                             <nil key="textColor"/>
                                             <nil key="highlightedColor"/>
                                         </label>
                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="407" translatesAutoresizingMaskIntoConstraints="NO" fixedFrame="YES" text="000 000 0000">
-                                            <rect key="frame" x="112" y="29" width="117" height="21"/>
+                                            <rect key="frame" x="31" y="29" width="117" height="21"/>
                                             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                             <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                             <color key="textColor" colorSpace="calibratedWhite" white="0.333333333333333" alpha="1"/>
                                             <nil key="highlightedColor"/>
                                         </label>
-                                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" id="2104" translatesAutoresizingMaskIntoConstraints="NO" fixedFrame="YES">
-                                            <rect key="frame" x="28" y="0.0" width="64" height="61"/>
-                                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                        </imageView>
                                     </subviews>
                                 </tableViewCellContentView>
                                 <connections>
                                     <outlet property="labelName" destination="406" id="name-outlet-406"/>
                                     <outlet property="labelNumber" destination="407" id="name-outlet-407"/>
                                     <segue id="1658" destination="1562" kind="show" identifier="DetailsSegue"/>
-                                    <outlet property="contactImage" destination="2104" id="name-outlet-2104"/>
                                 </connections>
                             </tableViewCell>
                         </prototypes>
@@ -94,7 +89,7 @@
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="1667" translatesAutoresizingMaskIntoConstraints="NO" fixedFrame="YES" text="Name">
                                 <rect key="frame" x="65" y="321" width="285" height="21"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <color key="textColor" colorSpace="calibratedRGB" red="1" green="0" blue="0" alpha="1"/>
+                                <color key="textColor" colorSpace="calibratedRGB" red="0" green="0" blue="1" alpha="1"/>
                                 <nil key="highlightedColor"/>
                                 <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="17"/>
                             </label>
@@ -144,7 +139,6 @@
         <simulatedScreenMetrics key="destination" type="retina55"/>
     </simulatedMetricsContainer>
     <resources>
-        <image name="Images/wendy.jpg" width="180" height="180"/>
         <image name="Images/tinkerbell.jpeg" width="600" height="600"/>
         <image name="Images/peterpan.jpg" width="600" height="600"/>
         <image name="Images/mikha.jpg" width="1280" height="720"/>
